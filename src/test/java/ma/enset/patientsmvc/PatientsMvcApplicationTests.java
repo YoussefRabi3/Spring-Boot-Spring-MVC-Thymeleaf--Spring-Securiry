@@ -8,6 +8,6 @@ class PatientsMvcApplicationTests {
 
     @Test
     void contextLoads() {
-    }
 
+    }
 }
