@@ -6,4 +6,5 @@ pour qu'on puisse afficher la partie patient du menu son voir le button nouveau 
   
   
   et voilà le resultat de l'affichage comme suit :
-  ![sec1](https://user-images.githubusercontent.com/86606579/165190934-09381b1e-3082-4b49-9ad5-12903655ce99.PNG)
+ 
+![new](https://user-images.githubusercontent.com/86606579/165191030-e4be3ac3-aaa0-4f9e-bdca-cf0eb056d589.PNG)
