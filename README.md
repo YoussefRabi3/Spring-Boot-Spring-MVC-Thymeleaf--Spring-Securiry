@@ -39,4 +39,28 @@ et voilà le résultat maintenant je suis un admin je peux chercher,ajouter,modi
 - Serveur Tomcat
 - Spring Security Filter
 
-## Deployment
+## il faut ajouter la dependence springsecurity 
+ 
+ ![sc](https://user-images.githubusercontent.com/86606579/165523754-6b46fab6-5b8f-4bee-97f9-060d93a3f837.PNG)
+##  il va afficher la page suivant ça veut dire qu'il faut s'authentifier avant l'accès à notre application avec SprintSecurityFilter
+![log](https://user-images.githubusercontent.com/86606579/165524195-20019ef5-1ccf-42b3-a63c-fc809304bbdd.PNG)
+ et pour s'authentifier il faut entrer Username et Password que j'ai déja préciser dans mon application
+ ![pss](https://user-images.githubusercontent.com/86606579/165525124-9b6ec613-3cdb-4388-a265-039d1cd39352.PNG)
+ 
+après que l'authentification passe avec succès je me dérige directement vers la page d'accueil 
+ 
+![home](https://user-images.githubusercontent.com/86606579/165526186-2e8e8d04-a340-4d64-b809-0f42bc10226f.PNG)
+donc là je peux voir la liste de tous les patients 
+ ![allpa](https://user-images.githubusercontent.com/86606579/165526368-8dcd8c0c-b27e-4126-b94d-da048cdb7fef.PNG)
+je peux aussi supprimer un patients en demandant de confirmer la suppression 
+ 
+ ![deletee](https://user-images.githubusercontent.com/86606579/165526675-d7bead2a-d90c-4301-8cc1-3b0bc90709bd.PNG)
+ ensuite l'admin à le droit de modifier un patients ms l'utilisateur n'a pas le droit de modifier
+ ![mod](https://user-images.githubusercontent.com/86606579/165527011-ec80c72a-131e-442c-8b95-73b4add75dcc.PNG)
+ l'admin à le droit aussi d'ajouter un patient mais l'utilisateur n'a pas le droit
+![add](https://user-images.githubusercontent.com/86606579/165527283-2d4a5866-0a45-4b13-923c-dad6e45cf047.PNG)
+ la recherche est accessible pour les deux admin et l'utilisateur on le droit de chercher un patient
+ ![search](https://user-images.githubusercontent.com/86606579/165527946-69184a7f-d634-489c-97ea-5a3a30f93f6a.PNG)
+
+
+ 
