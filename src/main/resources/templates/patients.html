@@ -14,12 +14,12 @@
 <div layout:fragment="content1">
 <div class="container mt-2">
     <div class="card">
-        <div class="card-header">Liste des Patients </div>
+        <div class="p-3 mb-2 bg-dark text-white">Liste des Patients </div>
         <div class="card-body">
             <form method="get" th:action="@{/user/index}">
                 <label>key world</label>
                 <input type="text" name="keyword" th:value="${keyword}">
-                <button type="submit" class="btn btn-primary">Chercher</button>
+                <button type="submit" class="btn btn-success">Chercher</button>
 
             </form>
             <table class="table">
@@ -35,15 +35,14 @@
                     <td th:text="${p.datenaissance}"></td>
                     <td th:text="${p.malade}"></td>
                     <td th:text="${p.score}"></td>
-                    <td sec:authorize="hasRole('ADMIN')">
-                         <a onclick="return confirm('vous voulez vraiment supprimer?')" class="btn btn-danger"
+                    <td sec:authorize="hasAuthority('ADMIN')">
+                         <a onclick="return confirm('vous voulez vraiment supprimer?')"  class="btn btn-danger"
                             th:href="@{/admin/delete(id=${p.id},keyword=${keyword},page=${currentPage})}">Delete
-
                          </a>
 
                     </td>
                     <td sec:authorize="hasAuthority('ADMIN')">
-                        <a  class="btn btn-success"
+                        <a class="btn btn-warning"
                            th:href="@{/admin/editPatient(id=${p.id},keyword=${keyword},page=${currentPage})}">Edit
 
                         </a>
@@ -55,7 +54,7 @@
             </table>
             <ul class="nav nav-pills">
                 <li th:each="page,status:${pages}">
-                    <a th:class="${status.index==currentPage?'btn btn-primary ms-1':'btn btn-outline-primary ms-1'}"
+                    <a th:class="${status.index==currentPage?'btn btn-secondary ms-1':'btn btn-outline-secondary ms-1'}"
                        th:text="${status.index}"
                        th:href="@{/user/index(page=${status.index},keyword=${keyword})}"
                     >

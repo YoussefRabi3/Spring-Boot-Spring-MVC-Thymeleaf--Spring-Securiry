@@ -19,6 +19,8 @@ public class PatientsMvcApplication {
         SpringApplication.run(PatientsMvcApplication.class, args);
 
     }
+    //en utilissant l'algorithme bcrypte en put hacher le password
+    //methode qui permet de retourner un objet de type passeworder encoder
     @Bean
     PasswordEncoder passwordEncoder(){
         return new BCryptPasswordEncoder();

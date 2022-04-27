@@ -64,7 +64,6 @@ public class   SecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().anyRequest().authenticated();
         http.exceptionHandling().accessDeniedPage("/403");
     }
-    //en utilissant l'algorithme bcrypte en put hacher le password
-    //methode qui permet de retourner un objet de type passeworder encoder
+
 
 }
